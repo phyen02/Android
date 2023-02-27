@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Practice1"
+    android:background="#1F8A70"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="98dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="114dp"
+        android:src="@drawable/icon">
+    </ImageView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email:"
+        android:textColor="@color/white"
+        android:textSize="16sp">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/etxtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:hint="Type your email address"
+        android:inputType="textEmailAddress">
+    </EditText>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Password:"
+        android:textColor="@color/white"
+        android:textSize="16sp">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/etxtPass"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:hint="Type your password"
+        android:inputType="textPassword"></EditText>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_gravity="center">
+    </Button>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="195dp"
+                android:layout_height="wrap_content"
+                android:gravity="right|bottom"
+                android:text="New user?"
+                android:textSize="15sp"
+                android:textColor="@color/white"></TextView>
+
+            <TextView
+                android:id="@+id/txtReg"
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"
+                android:gravity="center|bottom"
+                android:text=" Register here."
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:style="@style/Widget.AppCompat.TextView.Borderless.Colored">
+            </TextView>
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

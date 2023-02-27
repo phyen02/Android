@@ -1,0 +1,10 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application>
+        <activity
+            android:name="com.example.appco7hon.Checkbox"
+            android:exported="false"
+            android:label="@string/title_activity_checkbox"
+            android:theme="@style/Theme.AppCo7Hon.NoActionBar" />
+    </application>
+</manifest>
