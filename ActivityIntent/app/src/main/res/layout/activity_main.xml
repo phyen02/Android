@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Main Activity"
+        android:textSize="30sp"
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/btnSub1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open sub1"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/btnSub2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open sub2"
+        android:layout_gravity="center"
+        android:backgroundTint="#FF5722"/>
+
+    <Button
+        android:id="@+id/btnSub3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open sub3"
+        android:layout_gravity="center"
+        android:backgroundTint="#E91E63"/>
+    <EditText
+        android:id="@+id/edtNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter a number"
+        android:textSize="26sp"
+        android:gravity="center"
+        android:layout_marginTop="35dp"/>
+
+
+    <Button
+        android:id="@+id/btnSub4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send data -> sub4"
+        android:layout_gravity="center"
+        android:backgroundTint="#FF9800"/>
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="result here"
+        android:textSize="30sp"
+        android:gravity="center"/>
+
+</LinearLayout>

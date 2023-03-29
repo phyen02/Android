@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Practice3"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="290dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:src="@drawable/halong" />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom|right"
+            android:paddingRight="5sp"
+            android:src="@drawable/star" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="311dp"
+        android:layout_height="wrap_content"
+        android:text="HaLong Bay"
+        android:layout_marginLeft="16sp"
+        android:textSize="22sp"></TextView>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*">
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Camera"
+                android:layout_marginLeft="16sp"
+                android:paddingTop="22sp"
+                android:textSize="22sp"></TextView>
+
+            <EditText
+                android:id="@+id/edtCameraType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16sp"
+                android:paddingTop="22sp"
+                android:text="Leica M Typ 240"
+                android:textSize="20sp">
+            </EditText>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Settings"
+                android:layout_marginLeft="16sp"
+                android:paddingTop="22sp"
+                android:textSize="22sp"></TextView>
+
+            <EditText
+                android:id="@+id/edtCameraSettings"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16sp"
+                android:paddingTop="22sp"
+                android:text="f/4 16s ISO 200"
+                android:textSize="20sp"></EditText>
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        android:padding="22sp"
+        android:text="Seeking for a travel hub that is a mystical and magnificent feat
+of nature that never fails to impress? The one and only Halong Bay can be put into your list as a
+must-come spot when visiting the Northeast of Vietnam. Regconized as a UNESCO World Heritage Site twice,
+Halong Bay is under the management of both Quang Ninh and Hai Phong provinces."
+        android:textSize="16sp"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center|right"
+        android:layout_margin="16sp">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F0EEED"
+            android:text="DISCARD"
+            android:layout_column="1"
+            android:textColor="@color/black">
+        </Button>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F0EEED"
+            android:text="UPLOAD"
+            android:layout_marginLeft="16sp"
+            android:textColor="@color/black">
+        </Button>
+    </LinearLayout>
+</LinearLayout>
