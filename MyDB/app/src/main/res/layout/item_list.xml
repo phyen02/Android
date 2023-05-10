@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:layout_weight="10">
+
+    <TextView
+        android:id="@+id/txtProductInfo"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:text="Info..."
+        android:textSize="26sp"
+        android:layout_weight="9"></TextView>
+
+    <ImageView
+        android:id="@+id/imvEdit"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/baseline_carpenter_24"
+        android:layout_weight="0.5"></ImageView>
+
+    <ImageView
+        android:id="@+id/imvDel"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/baseline_restore_from_trash_24"
+        android:layout_marginStart="5dp"
+        android:layout_weight="0.5"></ImageView>
+
+</LinearLayout>
