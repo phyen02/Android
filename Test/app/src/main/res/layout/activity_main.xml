@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+        <Button
+            android:id="@+id/btnDraw"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="Draw"
+            android:layout_weight="1"
+            android:backgroundTint="#009688"/>
+        <EditText
+            android:id="@+id/edtNumbOfView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter number of views"
+            android:textSize="22sp"
+            android:layout_weight="9"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        >
+        <LinearLayout
+            android:id="@+id/layout_Container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <GridLayout
+                android:id="@+id/gridLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:useDefaultMargins="true">
+            </GridLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

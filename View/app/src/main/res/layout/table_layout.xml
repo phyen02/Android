@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ba68c8"
+    android:layout_margin="10dp"
+    android:stretchColumns="*1"
+    android:shrinkColumns="1,2,3">
+
+    <TableRow>
+        <TextView
+            android:text="Table Layout Example"
+            android:background="#FFEB3B"
+            android:layout_marginBottom="10dp"></TextView>
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:text="Button 1"
+            android:background="#F44336"
+            android:layout_marginRight="10dp"
+            android:layout_column="1"></Button>
+
+        <Button
+            android:text="Button 2"
+            android:backgroundTint="#F44336"
+            android:layout_marginRight="10dp"></Button>
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:text="Button 3"
+            android:backgroundTint="#9C27B0"
+            android:layout_marginRight="10dp"></Button>
+
+        <Button
+            android:text="Button 4"
+            android:backgroundTint="#8BC34A"
+            android:layout_marginRight="10dp"
+            android:layout_column="2"></Button>
+
+        <Button
+            android:text="Button 5"
+            android:backgroundTint="#009688"
+            android:layout_marginRight="10dp"></Button>
+    </TableRow>
+
+    <TableRow>
+        <Button></Button>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:inputType="number"
+            android:gravity="center"
+            android:layout_span="3"></EditText>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="ĐĂNG NHẬP"
+            android:gravity="center"
+            android:layout_span="4"
+            android:textSize="26dp"
+            style="bold"></TextView>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="Username"></TextView>
+
+        <EditText
+            android:hint="Nhập id"
+            android:layout_span="3"></EditText>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="Password"></TextView>
+        <EditText
+            android:hint="Nhập mật khẩu"
+            android:layout_span="3"></EditText>
+    </TableRow>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:layout_margin="5dp"></Button>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Huỷ"
+            android:layout_margin="5dp"></Button>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quên mật khẩu"
+            android:layout_margin="5dp"></Button>
+    </LinearLayout>
+
+</TableLayout>

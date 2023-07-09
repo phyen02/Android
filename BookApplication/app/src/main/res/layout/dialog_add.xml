@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/adding_book"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/edtNameBook"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="@string/name_book"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/edtPublisher"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="@string/publisher"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/edtTimePublished"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="@string/time_published"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/edtPriceBook"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="@string/price_book"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="15dp"
+            android:text="@string/add"
+            android:backgroundTint="#40E0D0"
+            />
+
+        <Button
+            android:id="@+id/btnCancle"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="45dp"
+            android:text="@string/cancle"
+            android:backgroundTint="#841414"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

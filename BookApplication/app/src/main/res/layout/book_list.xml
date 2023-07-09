@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="10"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tvInfo"
+        android:layout_weight="9"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        />
+
+    <ImageView
+        android:id="@+id/imvEdit"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_weight="0.5"
+        android:src="@drawable/ic_edit_24"/>
+
+    <ImageView
+        android:id="@+id/imvTrash"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_weight="0.5"
+        android:src="@drawable/ic_trash_24"/>
+
+</LinearLayout>

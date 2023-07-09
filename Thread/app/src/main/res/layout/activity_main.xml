@@ -5,57 +5,60 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:orientation="vertical">
-
+    android:orientation="vertical"
+    android:padding="15dp">
     <LinearLayout
+        android:weightSum="10"
+        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        >
         <EditText
             android:id="@+id/edtNumberOfView"
-            android:layout_width="match_parent"
+            android:layout_weight="7"
+            android:textSize="24sp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:hint="Enter number of views"
-            android:textSize="26sp"
-            android:layout_weight="9"/>
-
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Enter number of views" />
         <Button
             android:id="@+id/btnDraw"
-            android:layout_width="wrap_content"
+            android:layout_weight="3"
+            android:textSize="24dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Draw"
-            android:backgroundTint="#009688"
-            android:textSize="18sp"
-            android:layout_weight="1"/>
+            android:text="Draw"/>
     </LinearLayout>
 
     <TextView
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:text="0.0%"
         android:id="@+id/txtPercent"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="0  %"
-        android:textSize="24sp"
-        android:gravity="center"
-        android:layout_marginTop="10dp"/>
+        android:layout_height="wrap_content"/>
+
     <ProgressBar
         android:id="@+id/pbPercent"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="10dp"
         style="@style/Widget.AppCompat.ProgressBar.Horizontal"
-        android:layout_marginTop="10dp"></ProgressBar>
+        android:layout_marginTop="5dp"/>
 
     <ScrollView
-        android:id="@+id/container"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp">
         <LinearLayout
+            android:id="@+id/container"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_marginTop="10dp"
-            android:gravity="center">
+            android:gravity="center"/>
 
-        </LinearLayout>
     </ScrollView>
 
 </LinearLayout>
